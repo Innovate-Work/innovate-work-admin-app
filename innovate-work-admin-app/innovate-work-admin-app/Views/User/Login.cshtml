@@ -1,0 +1,13 @@
+﻿<form name="loginForm" asp-action="Authenticate" asp-controller="User">
+    <h3>Login form</h3>
+    <div class="form-floating mb-3">
+        <input class="form-control" id="username_input" type="text" name="username" placeholder="username" required />
+        <label for="login_input">Username</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input class="form-control" id="password_input" type="password" name="password" placeholder="SomePassword1234_" required />
+        <label for="password_input">Password</label>
+    </div>
+
+    <input type="submit" value="Login" class="btn btn-outline-dark" />
+</form>

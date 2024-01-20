@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Clients";
+}
+@model IEnumerable<Client>;
+@if (Model == null || Model.Count() == 0)
+{
+    <div class="text-center">There are no clients yet</div>
+}
+else
+{
+    <div class="text-center">
+        <table class="table">
+            <tr>
+                <th></th>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Phone
+                </th>
+                <th>
+                    Date
+                </th>
+                <th>
+                    WithSubscription
+                </th>
+                <th>
+                    IsCustom
+                </th>
+            </tr>
+
+           @foreach(var client in Model)
+           {
+                <tr>
+                    <td>@client.Id</td>
+                    <td>@client.Name</td>
+                    <td>@client.Email</td>
+                    <td>@client.Phone</td>
+                    <td>@client.Date.ToShortDateString()</td>
+                    <td>@client.WithSubscription</td>
+                    <td>@client.IsCustom</td>
+                </tr>    
+           }
+        </table>
+    </div>
+}
