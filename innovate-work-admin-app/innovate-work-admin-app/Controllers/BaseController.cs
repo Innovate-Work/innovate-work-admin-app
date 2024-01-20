@@ -11,7 +11,7 @@ namespace innovate_work_admin_app.Controllers
         protected IHttpClientFactory _httpClientFactory;
         protected LocalStorage _localStorage;
         protected readonly string _tokenName;
-        
+
         public BaseController(IHttpClientFactory httpClientFactory,
                               LocalStorage localStorage,
                               IConfiguration configuration)

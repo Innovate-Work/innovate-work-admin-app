@@ -1,9 +1,8 @@
 ﻿using Hanssens.Net;
+using innovate_work_admin_app.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
-using System.Text;
-using innovate_work_admin_app.Models;
-using System.Net.Http;
 
 namespace innovate_work_admin_app.Controllers
 {
@@ -15,7 +14,7 @@ namespace innovate_work_admin_app.Controllers
                                 IConfiguration configuration) : base(httpClientFactory, localStorage, configuration)
         {
         }
-
+        [Authorize]
         public async Task<Client?> GetAsync(int id)
         {
             var httpClient = GetHttpClient(_httpClientName);
@@ -39,7 +38,12 @@ namespace innovate_work_admin_app.Controllers
 
             return client;
         }
-        public async Task<IEnumerable<Client>?> GetAllAsync()
+        [Authorize]
+        public async Task<IActionResult> Index()
+        {
+            return View(await GetAllAsync());
+        }
+        private async Task<IEnumerable<Client>?> GetAllAsync()
         {
             var httpClient = GetHttpClient(_httpClientName);
 
@@ -63,24 +67,8 @@ namespace innovate_work_admin_app.Controllers
 
             return clients;
         }
-        public async Task<bool> CreateAsync(Client client)
-        {
-            var httpClient = GetHttpClient(_httpClientName);
 
-            var parameters = new Dictionary<string, string>();
-            parameters["name"] = client.Name;
-            parameters["email"] = client.Email;
-            parameters["phone"] = client.Phone;
-            parameters["withSubscription"] = client.WithSubscription.ToString();
-            parameters["isCustom"] = client.IsCustom.ToString();
-
-            var httpResponseMessage = await httpClient.PostAsync(httpClient.BaseAddress, new FormUrlEncodedContent(parameters));
-            
-            if (httpResponseMessage.IsSuccessStatusCode)
-                return true;
-
-            return false;
-        }
+        [Authorize]
         public async Task<bool> DeleteAsync(Guid clientId)
         {
             var httpClient = GetHttpClient(_httpClientName);
