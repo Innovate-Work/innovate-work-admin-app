@@ -1,15 +1,35 @@
-var builder = WebApplication.CreateBuilder(args);
+using Hanssens.Net;
+using innovate_work_admin_app.Extensions;
+using innovate_work_admin_app.Middlewares;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
-// Add services to the container.
+var builder = WebApplication.CreateBuilder(args);
+string baseRoot = builder?.Configuration.GetSection("BaseAddress").Value;
+
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddScoped<LocalStorage>();
+
+builder.Services.AddHttpClient(baseRoot, "authentication");
+builder.Services.AddHttpClient(baseRoot, "clients");
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+})
+.AddCookie(options =>
+{
+    options.LoginPath = builder.Configuration["Authentication:LoginPath"];
+});
+
+builder.Services.AddAuthorization();
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -19,9 +39,12 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseAuthentication();
+
+app.UseMiddleware<JwtTokenCheckMiddleware>();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Client}/{action=Index}/{id?}");
 
 app.Run();
