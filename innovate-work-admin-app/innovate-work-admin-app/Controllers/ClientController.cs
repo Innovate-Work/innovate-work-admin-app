@@ -14,8 +14,7 @@ namespace innovate_work_admin_app.Controllers
                                 IConfiguration configuration) : base(httpClientFactory, localStorage, configuration)
         {
         }
-        [Authorize]
-        public async Task<Client?> GetAsync(int id)
+        private async Task<Client?> GetAsync(int id)
         {
             var httpClient = GetHttpClient(_httpClientName);
             var httpRequestMessage = new HttpRequestMessage

@@ -2,8 +2,8 @@
 {
     public class SecurityToken
     {
-        public string AccessToken { get; set; }
-        public string UserName { get; set; }
+        public string Token { get; set; }
+        //public string UserName { get; set; }
         public DateTime ExpireAt { get; set; } = DateTime.Now.AddMinutes(5);
     }
 }

@@ -28,7 +28,7 @@ namespace innovate_work_admin_app.Middlewares
                     await context.SignOutAsync();
                 }
 
-                if (!context.User.Identity.IsAuthenticated && securityToken.ExpireAt > DateTime.UtcNow)
+                if (!context.User.Identity.IsAuthenticated && securityToken.ExpireAt > DateTime.Now)
                 {
                     await SignIn(securityToken, context);
                 }
@@ -56,7 +56,7 @@ namespace innovate_work_admin_app.Middlewares
             var claims = new List<Claim>
             {
                 //new Claim(ClaimTypes.Name, securityToken.UserName),
-                new Claim(nameof(SecurityToken.AccessToken), securityToken.AccessToken),
+                new Claim(nameof(SecurityToken.Token), securityToken.Token),
                 new Claim(nameof(SecurityToken.ExpireAt), securityToken.ExpireAt.ToString())
             };
             var identity = new ClaimsIdentity(claims, "Bearer");

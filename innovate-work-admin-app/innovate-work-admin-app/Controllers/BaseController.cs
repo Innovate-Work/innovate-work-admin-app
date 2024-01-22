@@ -24,12 +24,12 @@ namespace innovate_work_admin_app.Controllers
         protected HttpClient GetHttpClient(string clientName)
         {
             var httpClient = _httpClientFactory.CreateClient(clientName);
-            if (_localStorage.Exists(clientName))
+            if (_localStorage.Exists(_tokenName))
             {
                 string jsonToken = _localStorage.Get<string>(_tokenName);
                 SecurityToken token = JsonSerializer.Deserialize<SecurityToken>(jsonToken);
                 if (token != null)
-                    httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.AccessToken);
+                    httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token.Token);
 
             }
             return httpClient;

@@ -21,7 +21,7 @@ namespace innovate_work_admin_app.Controllers
         {
             var claims = new List<Claim>
             {
-                new Claim(nameof(SecurityToken.AccessToken), securityToken.AccessToken),
+                new Claim(nameof(SecurityToken.Token), securityToken.Token),
                 new Claim(nameof(SecurityToken.ExpireAt), securityToken.ExpireAt.ToString())
                 //new Claim(ClaimTypes.Name, securityToken.UserName),
             };
