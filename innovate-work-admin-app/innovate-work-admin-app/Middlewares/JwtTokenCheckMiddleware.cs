@@ -1,6 +1,7 @@
 ﻿using Hanssens.Net;
 using innovate_work_admin_app.Models.JWT;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Security.Claims;
 using System.Text.Json;
 
@@ -20,22 +21,21 @@ namespace innovate_work_admin_app.Middlewares
             string tokenName = configuration.GetSection("TokenLocalStorageName").Value;
             SecurityToken? securityToken = GetSecurityToken(localStorage, tokenName);
 
-            if (securityToken != null)
-            {
-                if (securityToken.ExpireAt < DateTime.UtcNow)
-                {
-                    localStorage.Remove(tokenName);
-                    await context.SignOutAsync();
-                }
-
-                if (!context.User.Identity.IsAuthenticated && securityToken.ExpireAt > DateTime.Now)
-                {
-                    await SignIn(securityToken, context);
-                }
-            }
-            else
+            if(securityToken == null)
             {
                 await context.SignOutAsync();
+                await _next.Invoke(context);
+            }
+
+            if (securityToken.ExpireAt < DateTime.UtcNow)
+            {
+                localStorage.Remove(tokenName);
+                await context.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            }
+
+            if (!context.User.Identity.IsAuthenticated && securityToken.ExpireAt > DateTime.Now)
+            {
+                await SignIn(securityToken, context);
             }
             await _next.Invoke(context);
         }
@@ -61,7 +61,7 @@ namespace innovate_work_admin_app.Middlewares
             };
             var identity = new ClaimsIdentity(claims, "Bearer");
             var claimsPrincipal = new ClaimsPrincipal(identity);
-            await context.SignInAsync(claimsPrincipal);
+            await context.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, claimsPrincipal);
         }
     }
 }

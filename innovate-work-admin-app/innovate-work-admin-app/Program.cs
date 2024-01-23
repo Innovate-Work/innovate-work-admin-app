@@ -18,6 +18,7 @@ builder.Services.AddAuthentication(options =>
     options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
     options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultSignOutScheme = CookieAuthenticationDefaults.AuthenticationScheme;
 })
 .AddCookie(options =>
 {
@@ -38,8 +39,8 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
 app.UseAuthentication();
+app.UseAuthorization();
 
 app.UseMiddleware<JwtTokenCheckMiddleware>();
 
