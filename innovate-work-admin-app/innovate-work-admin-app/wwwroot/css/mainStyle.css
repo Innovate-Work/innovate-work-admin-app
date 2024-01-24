@@ -1,0 +1,1242 @@
+body {
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #141515;
+  position: relative;
+}
+
+.text-content {
+  color: #fbfbfb;
+  font-family: "Manrope", sans-serif;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 90px;
+  letter-spacing: 0px;
+}
+@media (min-width: 390px) {
+  .text-content {
+    max-width: 390px;
+  }
+}
+@media (min-width: 576px) {
+  .text-content {
+    max-width: 390px;
+  }
+}
+@media (min-width: 768px) {
+  .text-content {
+    max-width: 607px;
+  }
+}
+@media (min-width: 992px) {
+  .text-content {
+    max-width: 399px;
+  }
+}
+@media (min-width: 1200px) {
+  .text-content {
+    max-width: 496px;
+  }
+}
+@media (min-width: 1440px) {
+  .text-content {
+    max-width: 593px;
+  }
+}
+
+.main-text {
+  color: #FBFBFB;
+  font-family: Manrope;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 90px; /* 93.75% */
+  letter-spacing: -1.92px;
+}
+@media (min-width: 390px) {
+  .main-text {
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+  }
+}
+@media (min-width: 576px) {
+  .main-text {
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px; /* 93.103% */
+    letter-spacing: -1.16px;
+  }
+}
+@media (min-width: 768px) {
+  .main-text {
+    font-size: 82px;
+    line-height: 78px; /* 95.122% */
+    letter-spacing: -1.64px;
+  }
+}
+@media (min-width: 992px) {
+  .main-text {
+    font-size: 68px;
+    line-height: 66px;
+    letter-spacing: -1.36px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-text {
+    font-size: 82px;
+    line-height: 78px;
+    letter-spacing: -1.64px;
+  }
+}
+@media (min-width: 1440px) {
+  .main-text {
+    font-size: 96px;
+    line-height: 90px; /* 93.75% */
+    letter-spacing: -1.92px;
+  }
+}
+
+.text-solutions {
+  margin-top: 10px;
+  color: #beff54;
+  font-family: Manrope;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 90px;
+  letter-spacing: -1.92px;
+}
+@media (min-width: 768px) {
+  .text-solutions {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 992px) {
+  .text-solutions {
+    font-size: 68px;
+    line-height: 66px;
+    letter-spacing: -1.36px;
+  }
+}
+@media (min-width: 1200px) {
+  .text-solutions {
+    font-size: 82px;
+    line-height: 78px;
+    letter-spacing: -1.64px;
+  }
+}
+@media (min-width: 1440px) {
+  .text-solutions {
+    font-size: 96px;
+    line-height: 90px;
+    letter-spacing: -1.92px;
+  }
+}
+
+.animation-gif {
+  width: 653px;
+  height: 619px;
+}
+@media (min-width: 390px) {
+  .animation-gif {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .animation-gif {
+    display: flex;
+    width: 453px;
+    height: 419px;
+  }
+}
+@media (min-width: 1200px) {
+  .animation-gif {
+    width: 553px;
+    height: 519px;
+  }
+}
+@media (min-width: 1440px) {
+  .animation-gif {
+    width: 653px;
+    height: 619px;
+  }
+}
+
+
+
+
+.text-content span {
+  color: #beff54;
+}
+
+.content-wrapper {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  display: flex;
+  gap: 74px;
+  justify-content: center;
+}
+@media (min-width: 390px) {
+  .content-wrapper {
+    display: flex;
+    justify-content: left;
+  }
+}
+@media (min-width: 576px) {
+  .content-wrapper {
+    display: flex;
+    justify-content: left;
+  }
+}
+@media (min-width: 992px) {
+  .content-wrapper {
+    gap: 56px;
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .content-wrapper {
+    gap: 60px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .content-wrapper {
+    gap: 74px;
+  }
+}
+
+.description-main {
+  color: #FBFBFB;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 150% */
+  margin-top: 42px;
+}
+@media (min-width: 768px) {
+  .description-main {
+    font-size: 18px;
+    line-height: 24px; /* 133.333% */
+  }
+}
+@media (min-width: 992px) {
+  .description-main {
+    font-size: 18px;
+    line-height: 24px; /* 133.333% */
+  }
+}
+@media (min-width: 1200px) {
+  .description-main {
+    font-size: 18px;
+    line-height: 24px; /* 133.333% */
+  }
+}
+@media (min-width: 1440px) {
+  .description-main {
+    font-size: 20px;
+    line-height: 30px; /* 150% */
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px 10px 0px; /* Я сохранил предыдущий отступ для текста, но вы можете изменить его по своему усмотрению */
+  background-color: black;
+  border-radius: 100px; /* Размер скругления для кнопки */
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 223px; /* Ширина кнопки */
+  height: 70px; /* Высота кнопки */
+  margin-top: 56px;
+}
+
+.button .text {
+  margin-left: 30px; /* Отступ для текста слева от стрелки */
+}
+
+.button .arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #beff54;
+  width: 62px; /* Ширина круга */
+  height: 62px; /* Высота круга */
+  border-radius: 100px; /* Размер скругления для круга */
+  margin: 4px; /* Отступ в 4px со всех сторон для круга */
+}
+
+/* Первоначальное состояние SVG внутри кнопки */
+.button .arrow-container svg {
+  transition: transform 0.3s; /* Плавное изменение за 0.3 секунды */
+  transform: rotate(0deg); /* Начальное положение (без поворота) */
+}
+
+/* Состояние SVG при наведении на кнопку */
+.button:hover .arrow-container svg {
+  transform: rotate(45deg); /* Поворот на 90 градусов */
+}
+
+.button {
+  position: relative;
+  overflow: hidden; /* Скрываем элементы, выходящие за границы кнопки. */
+}
+
+@keyframes rollToEnd {
+  0% {
+    left: 4px; /* начальное положение круга */
+  }
+  100% {
+    left: calc(100% - 66px); /* 66px = 62px (ширина круга) + 4px (отступ) */
+  }
+}
+.button.pressed .arrow-container {
+  position: absolute; /* Абсолютное позиционирование для круга внутри кнопки. */
+  animation: rollToEnd 0.8s forwards;
+}
+
+.button.pressed .text {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.business-solution-section {
+  padding-left: 35px; /* Отступ слева внутри контейнера */
+  padding-right: 35px; /* Отступ справа внутри контейнера */
+  padding-top: 25px; /* Отступ сверху внутри контейнера */
+  padding-bottom: 25px; /* Отступ снизу внутри контейнера */
+  border-radius: 20px;
+  background-color: #1b1d1e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0px 25px 100px;
+  gap: 30px;
+}
+@media (min-width: 390px) {
+  .business-solution-section {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .business-solution-section {
+    display: block;
+    height: auto;
+    width: calc(100% - 50px);
+    margin: 0px auto 68px;
+    padding: 28px 19px 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .business-solution-section {
+    display: flex;
+    padding-left: 35px; /* Отступ слева внутри контейнера */
+    padding-right: 35px; /* Отступ справа внутри контейнера */
+    padding-top: 25px; /* Отступ сверху внутри контейнера */
+    padding-bottom: 25px; /* Отступ снизу внутри контейнера */
+    justify-content: space-between;
+  }
+}
+
+.text-block {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  max-width: 700px;
+}
+@media(min-width: 992px) {
+  .text-block {
+    max-width: 800px;
+  }
+}
+
+
+.headline {
+  font-size: 100px;
+  color: #beff54;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110px;
+  text-transform: uppercase;
+  margin: 0px;
+}
+@media (min-width: 992px) {
+  .headline {
+    font-size: 75px;
+    line-height: 90px;
+  }
+}
+@media (min-width: 1200px) {
+  .headline {
+    font-size: 75px;
+    line-height: 90px;
+  }
+}
+@media (min-width: 1440px) {
+  .headline {
+    font-size: 100px;
+    line-height: 110px;
+  }
+}
+
+
+
+.cells-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 34px;
+  margin-top: 0px;
+}
+
+@media (min-width: 992px) {
+  .cells-block {
+    gap: 0px;
+  }
+}
+
+.cell {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  opacity: 0;
+  background-color: #1b1d1e;
+  border-radius: 8px;
+  transform: translateY(100px) scale(1); /* Изменено с translateX на translateY */
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  /* background: 0.3s ease;
+  border-radius: 0.3s ease; */
+}
+
+@media (min-width: 992px) {
+  .cell {
+    padding: 24px 0px 24px;
+  }
+  .cell:last-child {
+    padding-bottom: 48px;
+  }
+}
+
+.cell:hover {
+  background: linear-gradient(45deg, #000504, #1b1d1e);
+  transform: translateX(0) scale(1.05) !important;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+  animation: gradientAnimation 3s infinite;
+}
+
+.cell.animate-in {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.cell .svg-container {
+  transition: transform 0.3s ease;
+}
+
+.cell:hover .svg-container {
+  transform: rotate(45deg);
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background: linear-gradient(45deg, #000504, #1b1d1e);
+  }
+  50% {
+    background: linear-gradient(90deg, #000504, #1b1d1e);
+  }
+  100% {
+    background: linear-gradient(135deg, #000504, #1b1d1e);
+  }
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding-left: 0px;
+}
+
+.title,
+.description {
+  color: #fbfbfb;
+  font-family: "Manrope", sans-serif;
+  margin: 0; /* Убираем все отступы */
+}
+
+.title {
+  font-size: 42px;
+  font-style: normal;
+  max-width: 450px;
+  overflow-wrap: break-word;
+}
+
+.description {
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 400px;
+  overflow-wrap: break-word;
+}
+
+.svg-container {
+  margin-left: 50px;
+}
+
+.page-container {
+  padding: 35px;
+}
+
+.contact-form {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-title {
+  color: var(--form-title-color, #beff54);
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-message {
+  padding-bottom: 70px;
+  margin-left: 170px;
+  color: #fbfbfb;
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  max-width: 380px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+label {
+  display: none;
+}
+
+.page-container .contact-form .data-entrance #email,
+.page-container .contact-form .data-entrance #phone,
+.page-container .contact-form .data-entrance #name {
+  width: 538px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--input-underline, #5a5f62);
+  color: var(--input-text-color, #fff);
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  padding: 5px;
+  margin-top: 5px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.page-container .contact-form .data-entrance #email:focus,
+.page-container .contact-form .data-entrance #phone:focus,
+.page-container .contact-form .data-entrance #name:focus {
+  border-bottom: 1px solid var(--input-focus-underline, #beff54);
+  caret-color: var(--input-focus-underline, #beff54); /* Изменение цвета курсора при фокусе */
+}
+
+.submit-button {
+  width: 538px;
+  height: 70px;
+  flex-shrink: 0;
+  background: #282a2c;
+  color: #5a5f62;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+  margin-bottom: 48px
+}
+
+/* Define the container styles */
+.container-animation-text {
+  width: 100%;
+  height: auto; /* Высота, достаточная для двух строк текста */
+  flex-shrink: 0;
+  background: #beff54;
+  display: flex;
+  flex-direction: column; /* Для вертикального размещения строк */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Скрыть текст, который выходит за пределы контейнера */
+  position: relative; /* Необходимо для абсолютного позиционирования текста */
+}
+
+/* Define the text styles for the first line */
+.first-line {
+  color: #101011;
+  font-family: "Manrope";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* animation  */
+@media (max-width: 576px) {
+  /* Анимации для экранов шириной до 600px */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Начальное смещение вниз */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .main-text,
+  .text-solutions,
+  .description-main,
+  .button {
+    opacity: 0; /* Начальное состояние: невидимые */
+    animation: fadeInUp 0.5s ease-out forwards;
+  }
+  .main-text {
+    animation-delay: 0.5s; /* Задержка для "Innovative web and app" */
+  }
+  .text-solutions {
+    animation-delay: 1s; /* Задержка для "/solutions/" */
+  }
+  .description-main {
+    animation-delay: 1.5s; /* Задержка для описания */
+  }
+  .button {
+    animation-delay: 2s; /* Задержка для кнопки */
+  }
+}
+@media (min-width: 576px) {
+  @keyframes slideRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .main-text {
+    /* Применяем анимацию к тексту "Innovative web and app" */
+    animation: slideRight 1s ease-out;
+  }
+  .text-solutions {
+    /* Применяем анимацию к "/solutions/" с задержкой */
+    animation: slideUp 1s ease-out 0.5s;
+    animation-fill-mode: backwards; /* Чтобы элемент оставался невидимым до начала анимации */
+  }
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .text-content {
+    animation: slideRight 1s ease-out;
+  }
+  .text-solutions {
+    animation: slideUp 1s ease-out 0.5s;
+    animation-fill-mode: backwards;
+  }
+  .description-main {
+    /* Анимация для текста "Turning dreams into reality..." */
+    animation: slideUp 1s ease-out 1s; /* Задержка после анимации "/solutions/" */
+    animation-fill-mode: backwards;
+  }
+  .button {
+    /* Анимация для кнопки */
+    animation: slideUp 1s ease-out 1.5s; /* Задержка, чтобы появилась после текста */
+    animation-fill-mode: backwards;
+  }
+  .headline {
+    transform: translateX(-100%); /* Начальное положение за пределами экрана слева */
+    transition: transform 1s ease-out; /* Увеличиваем длительность анимации */
+    transition-delay: 0.5s; /* Задержка в полсекунды перед началом анимации */
+    opacity: 0; /* Начальная прозрачность */
+  }
+  .headline.visible {
+    transform: translateX(0); /* Конечное положение в нормальном состоянии */
+    opacity: 1; /* Полная видимость */
+  }
+  .form-title {
+    /* Стили для заголовка, возможно, добавьте переходы или другие эффекты по вкусу */
+    overflow: hidden; /* Обрезает текст, чтобы создать эффект печатания */
+    white-space: nowrap; /* Предотвращает перенос текста на новую строку */
+  }
+  .contact-message {
+    opacity: 0; /* Начальная прозрачность, элемент невидим */
+    transition: opacity 1s ease-in-out; /* Плавная анимация появления */
+  }
+  .contact-message.visible {
+    opacity: 1; /* Полная видимость при добавлении класса 'visible' */
+  }
+}
+/* forMainStyle.css */
+@media (max-width: 576px) {
+  .text-content {
+    order: 1;
+    color: #fbfbfb;
+    font-family: Manrope;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px; /* 93.103% */
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -30px;
+    width: auto;
+  }
+  .text-solutions {
+    order: 2;
+    color: #beff54;
+    font-family: Manrope;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px;
+  }
+  .animation-gif {
+    order: 5; /* The GIF comes last */
+    max-width: 80vw;
+    max-height: 80vw;
+    margin-top: 0;
+  }
+  .description-main {
+    order: 3;
+    color: #fbfbfb;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    margin-top: 30px;
+    margin-bottom: 32px;
+    margin-right: 0px;
+  }
+  .button {
+    order: 4;
+    width: 175px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .button .text {
+    margin-left: 22px;
+    font-size: 16px;
+  }
+  .button .arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #beff54;
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    margin: 4px;
+  }
+  .business-solution-section {
+    flex-direction: column;
+    height: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 35px;
+  }
+  .headline {
+    color: #beff54;
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .cell {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    box-shadow: none;
+    padding-left: 5px;
+  }
+  .cells-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 14px;
+    margin-top: 25px;
+  }
+  .title {
+    color: #fbfbfb; /* Color for the title */
+    font-family: Manrope;
+    font-size: 20px; /* Adjusted font size */
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+  }
+  .description {
+    color: #fbfbfb; /* Color for the description */
+    font-family: Manrope;
+    font-size: 14px; /* Adjusted font size */
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    padding-top: 10px;
+  }
+  .svg-container {
+    height: 65px; /* Adjusted height for svg */
+    margin-left: 5px;
+  }
+  .container-animation-text {
+    width: 100%;
+    height: 114px;
+    flex-shrink: 0;
+    background: #beff54;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+  /* Define the text styles for the first line */
+  .first-line {
+    color: #000;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px; /* 100% */
+    letter-spacing: 0.612px;
+    text-transform: uppercase;
+    padding: 0px;
+    white-space: unset;
+    top: 6px;
+    position: static;
+  }
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding-left: 10px;
+  }
+  .second-line {
+    display: none;
+  }
+  .form-title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .form {
+    display: block;
+    margin-top: 0em;
+  }
+  .contact-message {
+    display: none;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px !important;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  input[id=email],
+  input[id=phone],
+  input[id=name] {
+    width: 80vw !important;
+    height: 20px !important;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--input-underline, #5a5f62);
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 15px !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 5px;
+    margin-top: 5px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+  .submit-button {
+    width: 100%;
+    height: 48px;
+    flex-shrink: 0;
+    background: #1b1d1e;
+    color: #5a5f62;
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  /* Стили для планшетов поменьше */
+  /* Временно для футера */
+  /* footer {
+    display: none !important;
+  } */
+  /* hello section */
+  .animation-gif {
+    display: none;
+  }
+  .main-text, .text-solutions {
+    line-height: 76px;
+    font-size: 82px;
+    letter-spacing: -1.64px;
+  }
+  .text-content {
+    min-width: 496px;
+    max-width: 596px;
+    margin-bottom: 70px;
+    padding-left: 35px;
+  }
+  .text-solutions {
+    margin-top: 0px;
+  }
+  .description-main {
+    width: 462px;
+    font-size: 18px;
+  }
+  .button > .text {
+    font-size: 18px;
+  }
+  /* create your solutions section */
+  .business-solution-section {
+    display: block;
+    height: auto;
+    width: calc(100% - 50px);
+    margin: 0px auto 68px;
+    padding: 28px 19px 0px;
+  }
+  .headline {
+    margin: 0px;
+    font-size: 64px;
+    line-height: 70px;
+    font-weight: 700;
+    max-width: 698px;
+  }
+  .cells-block {
+    margin-top: 32px;
+    gap: 0px;
+  }
+  .cell {
+    display: flex;
+    padding: 12px 0px 24px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    width: auto;
+    margin: 10px 0px;
+    border-radius: 0px;
+  }
+  .cell .text-container {
+    /* max-width: 494px; */
+    max-width: 100%;
+  }
+  .cell .title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  .cell .description {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    max-width: 390px;
+  }
+  /* text animation line section */
+  .container-animation-text {
+    width: 100%;
+    height: 114px;
+    flex-shrink: 0;
+    background: #beff54;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+  /* Define the text styles for the first line */
+  .first-line {
+    color: #000;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px; /* 100% */
+    letter-spacing: 0.612px;
+    text-transform: uppercase;
+    padding: 0px;
+    white-space: unset;
+    top: 6px;
+    position: static;
+  }
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding-left: 10px;
+  }
+  /* ready to transform  & form section */
+  .page-container {
+    /* width: 704px; */
+    padding: 0px 32px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .page-container .form-title {
+    font-size: 36px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: wrap; /* Предотвращает перенос текста на новую строку */
+  }
+  .data-entrance,
+  .data-entrance .form-group input,
+  .data-entrance .submit-button {
+    max-width: 359px;
+  }
+  .contact-form {
+    margin-bottom: 80px;
+    height: auto;
+  }
+  .contact-message {
+    margin-left: 51px;
+    width: 288px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+  }
+  .data-entrance {
+    max-width: 50%;
+  }
+  .data-entrance .form-group {
+    max-width: 100%;
+  }
+  .data-entrance .form-group input {
+    max-width: 100%;
+  }
+  .submit-button {
+    width: 100%;
+    height: 70px;
+    flex-shrink: 0;
+    background: #282a2c;
+    color: #5a5f62;
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+  }
+  /* footer section */
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  /* Стили для планшетов побольше */
+  /* hello section */
+  .animation-gif {
+    display: none;
+  }
+  .content-wrapper {
+    justify-content: left;
+    height: auto;
+  }
+  .text-content {
+    font-size: 82px;
+    margin-bottom: 70px;
+    padding-left: 35px;
+  }
+  .text-solutions {
+    font-size: 82px;
+  }
+  .description-main {
+    width: 462px;
+    font-size: 18px;
+  }
+  .button > .text {
+    font-size: 18px;
+  }
+  /* create your solutions section */
+  .business-solution-section {
+    display: block;
+    height: auto;
+    width: calc(100% - 50px);
+    margin: 0px auto 68px;
+    padding: 28px 19px 0px;
+  }
+  .headline {
+    margin: 0px;
+    font-size: 64px;
+    line-height: 70px;
+    font-weight: 700;
+    /* max-width: 100%; */
+  }
+  .cells-block {
+    margin-top: 32px;
+    gap: 0px;
+  }
+  .cell {
+    display: flex;
+    padding: 12px 0px 24px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    align-self: stretch;
+    width: auto;
+    margin: 10px 0px;
+    border-radius: 0px;
+  }
+  .cell .text-container {
+    max-width: 494px;
+  }
+  .cell .title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  .cell .description {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    max-width: 390px;
+  }
+  /* text animation line section */
+  .first-line {
+    font-size: 29px;
+    line-height: 29px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .container-animation-text {
+    width: 100%;
+    border-radius: 20px;
+  }
+  /* ready to transform  & form section */
+  .page-container {
+    /* width: 704px; */
+    padding: 0px 32px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .page-container .form-title {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .data-entrance,
+  .data-entrance .form-group input,
+  .data-entrance .submit-button {
+    max-width: 359px;
+  }
+  .contact-form {
+    margin-bottom: 80px;
+    height: auto;
+  }
+  .contact-message {
+    margin-left: 51px;
+    width: 288px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+  }
+  /* footer section */
+}

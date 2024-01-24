@@ -101,5 +101,12 @@ namespace innovate_work_admin_app.Controllers
         {
             return View();
         }
+
+        public async Task<IActionResult> Logout()
+        {
+            _localStorage.Remove(_tokenName);
+            await HttpContext.SignOutAsync();
+            return View("Login");
+        }
     }
 }

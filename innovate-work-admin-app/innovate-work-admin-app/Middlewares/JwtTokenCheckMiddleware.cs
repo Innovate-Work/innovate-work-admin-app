@@ -25,6 +25,7 @@ namespace innovate_work_admin_app.Middlewares
             {
                 await context.SignOutAsync();
                 await _next.Invoke(context);
+                return;
             }
 
             if (securityToken.ExpireAt < DateTime.UtcNow)
