@@ -1,0 +1,24 @@
+﻿#usernameInput,
+#passwordInput {
+    width: 538px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--input-underline, #5a5f62);
+    color: var(--input-text-color, #fff);
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 5px;
+    margin-top: 5px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+#usernameInput:focus,
+#passwordInput:focus {
+    border-bottom: 1px solid var(--input-focus-underline, #beff54);
+    caret-color: var(--input-focus-underline, #beff54); /* Изменение цвета курсора при фокусе */
+}

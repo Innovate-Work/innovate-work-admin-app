@@ -546,54 +546,6 @@ label {
   display: none;
 }
 
-.page-container .contact-form .data-entrance #email,
-.page-container .contact-form .data-entrance #phone,
-.page-container .contact-form .data-entrance #name {
-  width: 538px;
-  height: 40px;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid var(--input-underline, #5a5f62);
-  color: var(--input-text-color, #fff);
-  font-family: "Manrope", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 30px;
-  padding: 5px;
-  margin-top: 5px;
-  outline: none;
-  transition: border-color 0.3s ease-in-out;
-}
-
-.page-container .contact-form .data-entrance #email:focus,
-.page-container .contact-form .data-entrance #phone:focus,
-.page-container .contact-form .data-entrance #name:focus {
-  border-bottom: 1px solid var(--input-focus-underline, #beff54);
-  caret-color: var(--input-focus-underline, #beff54); /* Изменение цвета курсора при фокусе */
-}
-
-.submit-button {
-  width: 538px;
-  height: 70px;
-  flex-shrink: 0;
-  background: #282a2c;
-  color: #5a5f62;
-  font-family: "Manrope", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 32px;
-  border: none;
-  border-radius: 100px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 48px;
-  margin-bottom: 48px
-}
-
 /* Define the container styles */
 .container-animation-text {
   width: 100%;
@@ -910,6 +862,8 @@ label {
     flex-wrap: wrap;
     align-items: center;
   }
+  input[id=usernameInput],
+  input[id=passwordInput],
   input[id=email],
   input[id=phone],
   input[id=name] {

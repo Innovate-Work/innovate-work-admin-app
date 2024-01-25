@@ -3,16 +3,21 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - innovate_work_admin_app</title>
+    <title>@ViewData["Title"] Innovate Admin</title>
     <link rel="stylesheet" href="~/css/generalStyle.css" />
     <link rel="stylesheet" href="~/css/mainStyle.css" />
+    <link rel="stylesheet" href="~/css/formStyle.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Kanit:wght@400;700&family=Poppins:wght@400;700&display=swap"
+          rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+          rel="stylesheet" />
 </head>
 <body>
     <header class="staticHeader">
         <div class="logo-container">
             <a asp-controller="Client" asp-action="Index">
                 <img src="~/src/Logo.svg" alt="Logo" class="logo" />
-                <div class="company-name">Innovate Work</div>
+                <div class="company-name">Innovate Work Administration</div>
             </a>
         </div>
         @if (User.Identity.IsAuthenticated)
