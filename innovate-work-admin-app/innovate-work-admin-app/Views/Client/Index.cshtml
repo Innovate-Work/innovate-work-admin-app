@@ -9,41 +9,56 @@
 else
 {
     <div class="text-center">
-        <table class="table">
+        <table class="feature-service-table" style="margin-top:20px;">
             <tr>
                 <th>
-                    Id
+                    <div class="head-div">Name</div>
                 </th>
                 <th>
-                    Name
+                    <div class="head-div">Email</div>
                 </th>
                 <th>
-                    Email
+                    <div class="head-div">Phone</div>
                 </th>
                 <th>
-                    Phone
+                    <div class="head-div">Date</div>
                 </th>
                 <th>
-                    Date
+                    <div class="head-div">Subscription</div>
                 </th>
                 <th>
-                    WithSubscription
-                </th>
-                <th>
-                    IsCustom
+                    <div class="head-div">Customisation</div>
                 </th>
             </tr>
 
            @foreach(var client in Model)
            {
                 <tr>
-                    <td>@client.Id</td>
                     <td>@client.Name</td>
                     <td>@client.Email</td>
                     <td>@client.Phone</td>
                     <td>@client.Date.ToShortDateString()</td>
-                    <td>@client.WithSubscription</td>
-                    <td>@client.IsCustom</td>
+                    <td>
+                        @if (@client.WithSubscription)
+                        {
+                            <i class="fa-solid fa-check" style="color: #c5ff68"></i>
+                        }
+                        else
+                        {
+                            <i class="fa-solid fa-horizontal-rule">—</i>
+                        }
+
+                    </td>
+                    <td>
+                        @if (@client.IsCustom)
+                        {
+                            <i class="fa-solid fa-check" style="color: #c5ff68"></i>
+                        }
+                        else
+                        {
+                            <i class="fa-solid fa-horizontal-rule">—</i>
+                        }
+                    </td>
                 </tr>    
            }
         </table>
