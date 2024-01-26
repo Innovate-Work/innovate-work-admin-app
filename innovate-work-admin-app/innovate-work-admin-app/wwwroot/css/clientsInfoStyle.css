@@ -1,0 +1,234 @@
+﻿.feature-service-table {
+    width: 100%;
+    /* Set the table width as needed */
+    color: white;
+    table-layout: fixed;
+    /* Set table layout to fixed */
+}
+
+.head-div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #1b1d1e;
+    padding-bottom: 10px;
+    padding: 22px 50px;
+    border-radius: 14px 14px 0px 0px;
+    background: #1B1D1E;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 390px) {
+    .head-div {
+        padding: 20px 5px;
+    }
+}
+
+@media (min-width: 992px) {
+    .head-div {
+        padding: 20px 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .head-div {
+        padding: 20px 20px;
+    }
+}
+
+.head-div h3 {
+    color: #fbfbfb;
+    font-family: Manrope;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: auto;
+}
+
+@media (min-width: 390px) {
+    .head-div h3 {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 576px) {
+    .head-div h3 {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) {
+    .head-div h3 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .head-div h3 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .head-div h3 {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .head-div h3 {
+        font-size: 36px;
+    }
+}
+
+.head-div p {
+    color: #fbfbfb;
+    font-family: Manrope;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 13px;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+    .head-div p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    .head-div p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .head-div p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .head-div p {
+        font-size: 20px;
+    }
+}
+
+.head-div p span {
+    color: #5a5f62;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin-right: 5px;
+    margin-top: 13px;
+}
+
+@media (min-width: 768px) {
+    .head-div p span {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    .head-div p span {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .head-div p span {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .head-div p span {
+        font-size: 20px;
+    }
+}
+
+.tr-body {
+    line-height: 2.5;
+}
+
+@media (min-width: 390px) {
+    .tr-body td {
+        font-size: 14px;
+        line-height: 20px; /* 142.857% */
+        height: 100px;
+    }
+}
+
+@media (min-width: 576px) {
+    .tr-body td {
+        font-size: 14px;
+        line-height: 20px; /* 142.857% */
+        height: 80px;
+    }
+}
+
+@media (min-width: 768px) {
+    .tr-body td {
+        font-size: 16px;
+        line-height: 22px; /* 142.857% */
+        height: 60px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .tr-body td {
+        font-size: 18px;
+        line-height: 24px; /* 133.333% */
+    }
+}
+
+@media (min-width: 1920px) {
+    .tr-body td {
+        font-size: 20px;
+        line-height: 24px; /* 120% */
+    }
+}
+
+.feature-service-table td {
+    width: 20%;
+    /* Set the width for the other columns */
+    text-align: center;
+}
+
+.feature-service-table td:first-child {
+    width: 30%;
+    /* Set a different width for the first column */
+    text-align: left;
+    /* Align text in the first column to the left */
+    padding: 10px;
+    /* Add padding for better spacing */
+}
+
+/* Цвет для четных строк */
+.feature-service-table tr:nth-child(even) {
+    background-color: #1b1d1e;
+}
+/* Цвет для нечетных строк */
+.feature-service-table tr:nth-child(odd) {
+    background-color: #141515;
+}
+
+.fa-solid{
+    font-weight: 900;
+}
+
+.fa-check:before {
+    content: url("data:image/svg+xml;base64,CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSI+CiAgPHBhdGggZD0iTTUgMTJMMTAgMTdMMjAgNyIgc3Ryb2tlPSIjQkVGRjU0IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K");
+}
+
+
+.fa-horizontal-rule {
+    color: #5A5F62;
+}
