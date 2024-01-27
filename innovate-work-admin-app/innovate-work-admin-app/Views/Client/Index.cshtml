@@ -4,12 +4,12 @@
 @model IEnumerable<Client>;
 @if (Model == null || Model.Count() == 0)
 {
-    <div class="text-center">There are no clients yet</div>
+    <div class="page-container">There are no clients yet</div>
 }
 else
 {
-    <div class="text-center">
-        <table class="feature-service-table" style="margin-top:20px;">
+    <div class="page-container">
+        <table class="feature-service-table">
             <tr>
                 <th>
                     <div class="head-div">Name</div>
@@ -31,8 +31,8 @@ else
                 </th>
             </tr>
 
-           @foreach(var client in Model)
-           {
+            @foreach (var client in Model)
+            {
                 <tr id="@client.Id">
                     <td>@client.Name</td>
                     <td>@client.Email</td>
@@ -62,8 +62,8 @@ else
                     <td>
                         <button class="delete-button" data-id="@client.Id">Delete</button>
                     </td>
-                </tr>    
-           }
+                </tr>
+            }
         </table>
     </div>
 }

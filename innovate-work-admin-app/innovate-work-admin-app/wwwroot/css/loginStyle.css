@@ -96,7 +96,7 @@
 		align-items: center;
 	}
 
-	.button {
+	.submit-button {
 		order: 4;
 		width: 175px;
 		height: 50px;
@@ -155,9 +155,6 @@
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-	.button > .text {
-		font-size: 18px;
-	}
 	
 	.login-form {
 		margin-bottom: 80px;
@@ -233,10 +230,6 @@
 		padding: 0px 32px;
 		margin-top: 80px;
 		margin-bottom: 80px;
-	}
-
-	.button > .text {
-		font-size: 18px;
 	}
 
 	.data-entrance,
