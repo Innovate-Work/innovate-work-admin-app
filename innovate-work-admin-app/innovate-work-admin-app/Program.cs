@@ -45,7 +45,11 @@ app.UseAuthorization();
 app.UseMiddleware<JwtTokenCheckMiddleware>();
 
 app.MapControllerRoute(
+    name: "admin",
+    pattern: "admin/{controller=Client}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Client}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

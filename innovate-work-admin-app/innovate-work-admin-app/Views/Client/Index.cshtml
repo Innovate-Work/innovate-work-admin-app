@@ -79,7 +79,7 @@ else
     document.querySelectorAll('.delete-button').forEach(button => {
         button.addEventListener('click', function () {
             var clientId = this.dataset.id;
-            var path = `/Client/Delete/${clientId}`
+            var path = `Client/Delete/${clientId}`
             console.log(path)
             fetch(path, {
                 method: 'DELETE'

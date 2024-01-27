@@ -15,7 +15,7 @@ namespace innovate_work_admin_app.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return Ok("It works");
         }
 
         public IActionResult Privacy()
