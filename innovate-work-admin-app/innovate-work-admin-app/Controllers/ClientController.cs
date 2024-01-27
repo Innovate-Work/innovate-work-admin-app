@@ -68,6 +68,7 @@ namespace innovate_work_admin_app.Controllers
         }
 
         [Authorize]
+        [HttpDelete("/CLient/Delete/{clientId}")]
         public async Task<bool> DeleteAsync(Guid clientId)
         {
             var httpClient = GetHttpClient(_httpClientName);

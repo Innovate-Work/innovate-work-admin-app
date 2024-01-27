@@ -33,7 +33,7 @@ else
 
            @foreach(var client in Model)
            {
-                <tr>
+                <tr id="@client.Id">
                     <td>@client.Name</td>
                     <td>@client.Email</td>
                     <td>@client.Phone</td>
@@ -59,8 +59,38 @@ else
                             <i class="fa-solid fa-horizontal-rule">—</i>
                         }
                     </td>
+                    <td>
+                        <button class="delete-button" data-id="@client.Id">Delete</button>
+                    </td>
                 </tr>    
            }
         </table>
     </div>
 }
+<script>
+    function deleteRowById(rowId) {
+        var row = document.getElementById(rowId);
+        if (row) {
+            row.parentNode.removeChild(row);
+            console.log("row deleted");
+        }
+    }
+
+    document.querySelectorAll('.delete-button').forEach(button => {
+        button.addEventListener('click', function () {
+            var clientId = this.dataset.id;
+            var path = `/Client/Delete/${clientId}`
+            console.log(path)
+            fetch(path, {
+                method: 'DELETE'
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    if (data) {
+                        deleteRowById(clientId);
+                    }
+                });
+        });
+    });
+</script>
