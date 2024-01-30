@@ -6,7 +6,7 @@ on:
 
 env:
   AWS_REGION: us-east-1                  # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: inn-work           # set this to your Amazon ECR repository name
+  ECR_REPOSITORY: admin           # set this to your Amazon ECR repository name
   ECS_SERVICE: admin                # set this to your Amazon ECS service name
   ECS_CLUSTER: InnCluster                # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: admin.json # set this to the path to your Amazon ECS task definition
@@ -48,9 +48,9 @@ jobs:
         # push it to ECR so that it can
         # be deployed to ECS.
         cd innovate-work-admin-app
-        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-        echo "image=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
+        docker build -t public.ecr.aws/h4u3l0x7/admin:$IMAGE_TAG .
+        docker push public.ecr.aws/h4u3l0x7/admin$IMAGE_TAG
+        echo "image=public.ecr.aws/h4u3l0x7/admin:$IMAGE_TAG" >> $GITHUB_OUTPUT
 
     - name: Fill in the new image ID in the Amazon ECS task definition
       id: task-def
