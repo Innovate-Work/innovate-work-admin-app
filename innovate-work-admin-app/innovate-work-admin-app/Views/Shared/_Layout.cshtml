@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] Innovate Admin</title>
+    <link rel="stylesheet" href="~/css/site.css"/>
+    <link rel="stylesheet" href="~/css/loginStyle.css"/>
+    <link rel="stylesheet" href="~/css/clientsInfoStyle.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Kanit:wght@400;700&family=Poppins:wght@400;700&display=swap"
+          rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+          rel="stylesheet" />
+</head>
+<body>
+    <header class="staticHeader">
+        <div class="logo-container">
+            <a asp-controller="Client" asp-action="Index">
+                <img src="~/src/Logo.svg" alt="Logo" class="logo" />
+                <div class="company-name">Innovate Work Administration</div>
+            </a>
+        </div>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <div class="logout">
+                <a asp-controller="User" asp-action="Logout">Logout</a>
+            </div>
+        }
+        else
+        {
+            <div class="login">
+                <a asp-controller="User" asp-action="Login">Login</a>
+            </div>
+        }
+    </header>
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

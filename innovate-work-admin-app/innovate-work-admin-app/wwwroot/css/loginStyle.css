@@ -1,0 +1,245 @@
+.login-form {
+	margin-top: 60px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-title {
+	color: var(--form-title-color, #beff54);
+	font-size: 56px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.page-container .login-form .data-entrance #usernameInput,
+.page-container .login-form .data-entrance #passwordInput {
+	width: 538px;
+	height: 40px;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid var(--input-underline, #5a5f62);
+	color: var(--input-text-color, #fff);
+	font-family: "Manrope", sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 30px;
+	padding: 5px;
+	margin-top: 5px;
+	outline: none;
+	transition: border-color 0.3s ease-in-out;
+}
+
+.page-container .login-form .data-entrance #usernameInput:focus,
+.page-container .login-form .data-entrance #passwordInput:focus {
+	border-bottom: 1px solid var(--input-focus-underline, #beff54);
+	caret-color: var(--input-focus-underline, #beff54); /* Изменение цвета курсора при фокусе */
+}
+
+.submit-button {
+	width: 538px;
+	height: 70px;
+	flex-shrink: 0;
+	background: #282a2c;
+	color: #5a5f62;
+	font-family: "Manrope", sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 32px;
+	border: none;
+	border-radius: 100px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 48px;
+	margin-bottom: 48px
+}
+
+@media (min-width: 576px) {
+	.form-title {
+		/* Стили для заголовка, возможно, добавьте переходы или другие эффекты по вкусу */
+		overflow: hidden; /* Обрезает текст, чтобы создать эффект печатания */
+		white-space: nowrap; /* Предотвращает перенос текста на новую строку */
+	}
+
+	.button {
+		/* Анимация для кнопки */
+		animation: slideUp 1s ease-out 1.5s; /* Задержка, чтобы появилась после текста */
+		animation-fill-mode: backwards;
+		animation-delay: 2s;
+		opacity: 0; /* Начальное состояние: невидимые */
+		animation: fadeInUp 0.5s ease-out forwards;
+	}
+}
+
+@media (max-width: 576px) {
+	.form-title {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.login-form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 50px !important;
+		height: auto;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.submit-button {
+		order: 4;
+		width: 175px;
+		height: 50px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.form-title {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.form {
+		display: block;
+		margin-top: 0em;
+	}
+
+	input[id=usernameInput],
+	input[id=passwordInput]{
+		width: 80vw !important;
+		height: 20px !important;
+		background: transparent;
+		border: none;
+		border-bottom: 1px solid var(--input-underline, #5a5f62);
+		color: #fff;
+		font-family: "Manrope", sans-serif;
+		font-size: 15px !important;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 30px;
+		padding: 5px;
+		margin-top: 5px;
+		outline: none;
+		transition: border-color 0.3s ease-in-out;
+	}
+
+	.submit-button {
+		width: 100%;
+		height: 48px;
+		flex-shrink: 0;
+		background: #1b1d1e;
+		color: #5a5f62;
+		font-family: "Manrope", sans-serif;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 20px;
+		border: none;
+		border-radius: 100px;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 48px;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+	
+	.login-form {
+		margin-bottom: 80px;
+		height: auto;
+	}
+	.data-entrance,
+	.data-entrance .form-group input,
+	.data-entrance .submit-button {
+		max-width: 359px;
+	}
+
+	.data-entrance{
+		margin-bottom:25px;
+	}
+
+	.data-entrance {
+		max-width: 50%;
+	}
+	.data-entrance .form-group {
+		max-width: 100%;
+	}
+	.data-entrance .form-group input {
+		max-width: 100%;
+	}
+	.page-container {
+		/* width: 704px; */
+		padding: 0px 32px;
+		margin-top: 80px;
+		margin-bottom: 80px;
+	}
+	.page-container .form-title {
+		font-size: 36px;
+		font-weight: 700;
+		font-style: normal;
+		line-height: normal;
+		text-align: center;
+		padding-left: 10px;
+		padding-right: 10px;
+		white-space: wrap; /* Предотвращает перенос текста на новую строку */
+	}
+
+	.submit-button {
+		width: 100%;
+		height: 70px;
+		flex-shrink: 0;
+		background: #282a2c;
+		color: #5a5f62;
+		font-family: "Manrope", sans-serif;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 32px;
+		border: none;
+		border-radius: 100px;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 48px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.page-container .form-title {
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+	}
+
+	.page-container {
+		/* width: 704px; */
+		padding: 0px 32px;
+		margin-top: 80px;
+		margin-bottom: 80px;
+	}
+
+	.data-entrance,
+	.data-entrance .form-group input,
+	.data-entrance .submit-button {
+		max-width: 359px;
+	}
+
+	.login-form {
+		margin-bottom: 80px;
+		height: auto;
+	}
+}

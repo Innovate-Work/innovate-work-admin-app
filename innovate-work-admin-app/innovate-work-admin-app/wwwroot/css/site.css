@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #5a5f62;
+    transition: transform 0.2s, color 0.2s;
+    transform: scale(1); /* ”становите начальный размер */
+}
+
+a:hover {
+    color: #beff54; /* «еленый цвет текста при наведении */
+    transform: scale(1.1); /* ”величение на 10% при наведении */
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141515;
+    position: relative;
+}
+
+.logout, login {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.page-container {
+    padding: 35px;
+}
+
+.company-name {
+    color: #fbfbfb;
+    font-family: Michroma;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 5px;
+}
+
+.logo-company-name {
+    color: #fbfbfb;
+    font-family: Michroma;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    margin-left: 16px;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .logo-company-name {
+        margin-left: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-company-name {
+        margin-left: 8px;
+    }
+}
+
+.staticHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b1d1e;
+    color: white;
+    height: 71px;
+    padding: 0 20px;
+    width: calc(100% - 50px); /* 100% ширины минус 25px с каждой стороны */
+    flex-shrink: 0;
+    border-radius: 12px;
+    margin: 25px 25px 0 25px; /* верхний отступ 25px, правый и левый 25px, нижний 0px */
+    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* дл€ вертикального выравнивани€ содержимого по центру */
+    gap: 5px;
+}
+
+.logo {
+    width: 33px;
+    height: 21px;
+}
+
+@media (max-width: 768px) {
+    .staticHeader {
+        border-radius: inherit;
+        justify-content: left;
+        border-bottom-left-radius: 15px; /* «акругл€ем нижние углы */
+        border-bottom-right-radius: 15px;
+        margin: 0 0 25px 0; /* ”бираем верхние и боковые отступы, оставл€ем только нижний */
+        height: 91px;
+        box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+        width: auto;
+    }
+
+    .logo-container {
+        position: absolute;
+        margin-left: 25px;
+        transform: translateX(-50%); /* ÷ентрируем логотип */
+        margin-top: 22px;
+        margin-left: 91px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    /* header */
+    .company-name {
+        display: none;
+    }
+}
