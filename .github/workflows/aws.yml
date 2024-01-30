@@ -49,7 +49,7 @@ jobs:
         # be deployed to ECS.
         cd innovate-work-admin-app
         docker build -t public.ecr.aws/h4u3l0x7/admin:$IMAGE_TAG .
-        docker push public.ecr.aws/h4u3l0x7/admin$IMAGE_TAG
+        docker push public.ecr.aws/h4u3l0x7/admin:$IMAGE_TAG
         echo "image=public.ecr.aws/h4u3l0x7/admin:$IMAGE_TAG" >> $GITHUB_OUTPUT
 
     - name: Fill in the new image ID in the Amazon ECS task definition
